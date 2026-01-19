@@ -113,7 +113,7 @@ python udp-listener.py
 
 **Option 1  Download Pre-Built JAR (Recommended)**
 
-1. Download the pre-built client JAR from the [GitHub Releases](#) section:
+1. Download the pre-built client JAR from the [GitHub Releases](https://github.com/ntezimanagad/mtls-secure-broadcast-system/releases/tag/v1.0.0) section:
 
    ```
    mtls-client-0.0.1-SNAPSHOT.jar
@@ -196,4 +196,4 @@ C:.
 
 **Candidate:** Ntezimana Gad
 **Position:** Senior Backend Engineer Assessment
-**Repository:** [[GitHub Link]](https://github.com/ntezimanagad/mtls-secure-broadcast-system.git)
+**Repository:** [GitHub Link](https://github.com/ntezimanagad/mtls-secure-broadcast-system.git)

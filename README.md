@@ -180,20 +180,20 @@ python udp-listener.py
 
 ```text
 C:.
-├── certs/                 # Root CA & keys
+├── certs/                 
 │   ├── ca/
 │   ├── client/
 │   └── server/
-├── mtls-client/           # Java client source & runnable JAR
+├── mtls-client/          
 │   └── target/
 │       └── mtls-client-0.0.1-SNAPSHOT.jar
-├── mtls-server/           # Java server source, Dockerfile, docker-compose
+├── mtls-server/           
 │   └── src/main/resources/certs/
-└── udp-listener.py        # Python binary UDP listener (Task 2)
+└── udp-listener.py        
 ```
 
 ---
 
 **Candidate:** Ntezimana Gad
 **Position:** Senior Backend Engineer Assessment
-**Repository:** [GitHub Link]
+**Repository:** [[GitHub Link]](https://github.com/ntezimanagad/mtls-secure-broadcast-system.git)

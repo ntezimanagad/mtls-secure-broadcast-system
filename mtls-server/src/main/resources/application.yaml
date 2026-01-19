@@ -1,0 +1,50 @@
+spring:
+  application:
+    name: mtls-server
+
+  # datasource:
+  #   url: jdbc:mysql://localhost:3306/mtls_db?useSSL=false&serverTimezone=UTC
+  #   username: root   
+  #   password:  
+  #   driver-class-name: com.mysql.cj.jdbc.Driver
+
+  # jpa:
+  #   hibernate:
+  #     ddl-auto: update     
+  #   show-sql: true
+  #   database-platform: org.hibernate.dialect.MySQL8Dialect
+
+
+  datasource:
+    url: jdbc:postgresql://db:5432/mtls_db
+    username: mtls_user
+    password: mtls_pass
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+  profiles:
+    active: default
+
+server:
+  port: 8443
+  ssl:
+    enabled: true
+    key-store: classpath:certs/server.p12
+    key-store-password: password
+    key-store-type: PKCS12
+    key-alias: 1       
+    client-auth: need
+    trust-store: classpath:certs/ca-truststore.jks
+    trust-store-password: password
+    trust-store-type: JKS
+
+logging:
+  level:
+    org.apache.tomcat.util.net: DEBUG
